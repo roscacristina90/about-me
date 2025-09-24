@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <base href="/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Labs environment for data science with Jupyter, R, and Scala.">
+  <title>Skills Network Labs</title>
+  <script src="/static/react-dist/iframeComms.js"></script>
+  <script>
+    !function () { const e = ['debug', 'destroy', 'do', 'help', 'identify', 'is', 'off', 'on', 'ready', 'render', 'reset', 'safe', 'set']; if (window.noticeable) console.warn('Noticeable SDK code snippet loaded more than once'); else { const n = function (e) { return function () { const n = Array.prototype.slice.call(arguments); return n.unshift(e), t.push(n), t } }; var t = window.noticeable = window.noticeable || []; !function () { for (let o = 0; o < e.length; o++) { const r = e[o]; t[r] = n(r) } }(), function () { const e = document.createElement('script'); e.async = !0, e.src = 'https://sdk.noticeable.io/l.js'; const n = document.head; n.insertBefore(e, n.firstChild) }() } }();
+  </script>
+  <script type="module" crossorigin src="/static/react-dist/index-3b11f7e4.js"></script>
+  <link rel="stylesheet" href="/static/react-dist/index-7fa0eb09.css">
+</head>
+
+<body style="overflow: hidden;">
+  <div id="root"></div>
+  
+
+  <script>
+    // access the variables passed from the flask backend and put them to the window object
+    window.data = {"author_ide_url": "https://author-ide.skills.network", "default_heartbeat_time": 1800, "iframe_src": "https://theianext-0-labs-prod-misc-tools-us-east-0.labs.cognitiveclass.ai/oauth_login?next=%2Fhub%2Fspawn%3F", "inactive_logout_time": 60, "instruction_placement": "left", "instruction_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250ZXh0X2lkIjoib25kZW1hbmR-eUk4ZkFVaEZFZTZjS2c0MUlWd0dHdyIsImNvbnRleHRfbGFiZWwiOiJpbnRyb2R1Y3Rpb24taHRtbC1jc3MtamF2YXNjcmlwdCIsImNvdXJzZV90aXRsZSI6IkludHJvZHVjdGlvbiB0byBIVE1MLCBDU1MsICYgSmF2YVNjcmlwdCIsImVtYWlsIjoicm9zY2FjcmlzdGluYTkwQHlhaG9vLmNvbSIsImZ1bGxfbmFtZSI6IkNyaXN0aW5hICIsImxvY2FsZXNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuc3RhdGljLmxhYnMuc2tpbGxzLm5ldHdvcmsvV0NaVm05Y01NR2FxblBnQTYteVZpQS9maW5hbC1wcm9qZWN0LWluc3RydWN0aW9ucy12My12MS1sb2NhbGVzLmpzb24iLCJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuc3RhdGljLmxhYnMuc2tpbGxzLm5ldHdvcmsvSUJNRGV2ZWxvcGVyU2tpbGxzTmV0d29yay1DRDAxMDFFTi1Ta2lsbHNOZXR3b3JrL2xhYnMvUHJvamVjdC9GaW5hbF9Qcm9qZWN0X1YzL2ZpbmFsLXByb2plY3RfaW5zdHJ1Y3Rpb25zX3YzLm1kIiwicmVzb3VyY2VfbGlua19pZCI6Im9uZGVtYW5kfnlJOGZBVWhGRWU2Y0tnNDFJVndHR3chflFTeEhqIiwidG9vbF9jb25zdW1lcl9pbmZvX3Byb2R1Y3RfZmFtaWx5X2NvZGUiOiJpbXMiLCJ0b29sX2NvbnN1bWVyX2luc3RhbmNlX2Rlc2NyaXB0aW9uIjoiQ291cnNlcmEiLCJ1c2VybmFtZSI6InJvc2NhY3Jpc3RpbiIsImFkbWluIjpmYWxzZSwiaWF0IjoxNzM5Mjg0Njk2LCJleHAiOjE3MzkzNzEwOTZ9.SkMI0trRMoWKQdcNGIol0pdJSuu5mwsFjNxFzmPiP7A", "instruction_width": "50", "lab_environment": "published", "locales_url": "https://cf-courses-data.static.labs.skills.network/WCZVm9cMMGaqnPgA6-yViA/final-project-instructions-v3-v1-locales.json", "messaging_domain": "messaging.skills.network", "mode": "learn", "tai_enabled": true, "tai_feedback_nats_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmdhbml6YXRpb24iOiJzbiIsInByb2dyYW0iOiJsYWJzIiwicHJvamVjdCI6ImNsb3VkLWlkZSIsIm9wdGlvbnMiOnsicGVybWl0dGVkQWN0aW9ucyI6WyJjaGF0LmZlZWRiYWNrLnBvc2l0aXZlIiwiY2hhdC5mZWVkYmFjay5uZWdhdGl2ZSJdLCJwZXJtaXR0ZWREYXRhIjpbInRhaUNoYXRJZCIsImFpTWVzc2FnZUNvbnRlbnQiLCJ1c2VyTWVzc2FnZUNvbnRlbnQiLCJmZWVkYmFja0NvbnRlbnQiXSwicGVybWl0dGVkVHlwZSI6InVzZXIiLCJwZXJtaXR0ZWRVc2VybmFtZSI6InJvc2NhY3Jpc3RpbiJ9LCJpYXQiOjE3MzkyODQ2OTd9.rd1JpUryaWs1fguHlVeL6LHerJaGGBgTVXO4LNRb8EA", "tai_watsonx_ai_enabled": false, "username": "roscacristin", "websocket_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzSW4iOiIyNGgiLCJ0b29sIjoiY2xvdWQtaWRlIiwidXNlcm5hbWUiOiJyb3NjYWNyaXN0aW4iLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTczOTI4NDY5NiwiZXhwIjoxNzM5MzcxMDk2fQ.jWvFUsQqzCkHyEgql1wa1qeQmy6VYdhYY-sMvMGgIfs", "websocket_url": "https://websocket-service.skills.network"}; // ignore error, just jinja syntax
+
+  </script>
+  <script>
+    window.addEventListener('load', function () {
+      var interval = window.data.default_heartbeat_time * 1000;
+      setInterval(function () {
+        console.log("Posting one heartbeat.");
+        var heartbeatRequest = new XMLHttpRequest();
+        var url = '/heartbeat'; // assume url starts with a slash
+        // Edge doesn't like posting to just /heartbeat
+        // Edge also might not like window.location.origin
+        if (!(window && window.location && window.location.host)) {
+          // We might be running after someone did a File > Save As
+          // In which case we might as well give up
+          return false;
+        }
+        url = (window.location.protocol + '//' + window.location.host + url);
+        heartbeatRequest.open('POST', url, true);
+        // request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        heartbeatRequest.send(null);
+
+        // // refresh Google Analytics
+        // if (typeof ga !== 'undefined') {
+        //     ga('send', 'event', 'Heartbeat', 'heartbeat');
+        // }
+      }, interval);
+    });
+  </script>
+</body>
+
+</html>

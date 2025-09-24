@@ -1,0 +1,30 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows specific files
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Node modules (if you add Node.js later)
+node_modules/
+
+# Archives and zip files that aren't needed
+*.zip
+
+# Temporary files
+*.tmp
+*.temp
