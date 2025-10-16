@@ -308,7 +308,7 @@ input, textarea {
   pointer-events: auto !important;
   user-select: text !important;
   cursor: text !important;
-  border: 2px solid #666 !important;
+  border: 1px solid gray !important;
   padding: 12px !important;
   background-color: white !important;
   position: relative !important;
@@ -316,6 +316,7 @@ input, textarea {
   outline: 2px solid transparent;
   box-sizing: border-box;
   caret-color: #333333 !important;
+  border-radius: 11px !important;
 }
 
 input:focus, textarea:focus {
