@@ -7,8 +7,8 @@ body {
 
 #home {
   background-color:  #7600bc;
-  padding: 1.5rem 1rem;
-  margin: 0 0 0.5rem 0;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  margin: 0 0 0.1rem 0;
   height: auto;
   min-height: 60px;
  }
@@ -19,6 +19,10 @@ body {
   padding: 20px;
   font-size: 20px;
   text-decoration:none;
+}
+
+.topmenu:hover {
+  text-decoration: underline;
 }
 .topdiv {
   float: right;
