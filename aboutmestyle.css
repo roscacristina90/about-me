@@ -237,8 +237,19 @@ section {
   color:#7600bc;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
+  margin-left: 30px;
 }
 
+/* Make skill and project purple text match left margin */
+.skill h6 {
+  color: #7600bc;
+  margin-left: 30px;
+}
+
+.project-card h3 {
+  color: #7600bc;
+  margin-left: 30px;
+}
 /* Scroll to Top Button */
 
 .iconbutton{
