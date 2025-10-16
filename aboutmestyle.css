@@ -221,6 +221,8 @@ section {
 
 .recommendation {
   text-align: left;
+    margin-left: 10px;
+    padding-left: 0;
   width: 18rem;
   background-color: white;
   border-radius: 11px;
@@ -234,20 +236,22 @@ section {
 }
 
 .recommendation span {
-  color:#7600bc;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
-  margin-left: 30px;
+  color:#333333;
+  margin-left: 0;
 }
 
 /* Make skill and project purple text match left margin */
 .skill h6 {
-  color: #7600bc;
+  color: #333333;
   margin-left: 30px;
 }
 
+/* Specific project titles: Chatbot, Sentiment Analyzer, E-PLANT Website */
 .project-card h3 {
-  color: #7600bc;
+  color: #333333;
+  font-size: 22px;
   margin-left: 30px;
 }
 /* Scroll to Top Button */
